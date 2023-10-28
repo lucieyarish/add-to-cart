@@ -1,2 +1,2 @@
-# add-to-cart
-🛒 A web app disguised as mobile app for creating shopping list. 
+# Add to Cart
+🛒 A web app for creating shopping list disguised as mobile app. 
