@@ -19,8 +19,20 @@ img {
     margin: 0 auto;
 }
 
+input, button {
+    width: 320px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0);;
+}
+
 input {
-    color: #432000;
+    color: #AC485A;
     background-color: #DCE1EB;
     margin: 10px 0;
 }
@@ -28,15 +40,4 @@ input {
 button {
     color: #FDFDFD;
     background-color: #AC485A;
-}
-
-input, button {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    padding: 15px;
-    border: 0;
 }
