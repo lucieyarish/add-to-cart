@@ -30,6 +30,17 @@ addBtnEl.addEventListener('click', function () {
   }
 });
 
+inputFieldEl.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    let inputValue = inputFieldEl.value;
+    if (inputValue !== '') {
+      const capitalizedInput = capitalizeFirstLetter(inputValue);
+      push(shoppingListInDB, capitalizedInput);
+      clearInput();
+    }
+  }
+});
+
 onValue(shoppingListInDB, function (snapshot) {
   if (snapshot.exists()) {
     let itemsInDb = Object.entries(snapshot.val());
