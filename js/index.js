@@ -23,8 +23,11 @@ const shoppingListEl = document.getElementById('shopping-list');
 addBtnEl.addEventListener('click', function () {
   let inputValue = inputFieldEl.value;
 
-  push(shoppingListInDB, inputValue);
-  clearInput();
+  if (inputValue !== '') {
+    const capitalizedInput = capitalizeFirstLetter(inputValue);
+    push(shoppingListInDB, capitalizedInput);
+    clearInput();
+  }
 });
 
 onValue(shoppingListInDB, function (snapshot) {
@@ -35,14 +38,18 @@ onValue(shoppingListInDB, function (snapshot) {
 
     for (let i = 0; i < itemsInDb.length; i++) {
       let currentItem = itemsInDb[i];
-      let currentItemID = currentItem[0];
-      let currentItemValue = currentItem[1];
       appendItemToShoppingList(currentItem);
     }
   } else {
     shoppingListEl.innerHTML = '<p>No items here... yet!</p>';
   }
 });
+
+function capitalizeFirstLetter(inputVal) {
+  const capitalizedLetter = inputVal.charAt(0).toUpperCase();
+  const str = inputVal.slice(1);
+  return capitalizedLetter + str;
+}
 
 function clearInput() {
   inputFieldEl.value = '';
