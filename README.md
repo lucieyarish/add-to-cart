@@ -1,6 +1,6 @@
 # Add to Cart
 
-🛒 A web app for creating shopping list disguised as mobile app.
+🛒 A web app for creating shopping list disguised as mobile app built with HTML, CSS, JavaScript and Firebase.
 
 ## About the Project
 
