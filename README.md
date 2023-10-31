@@ -2,6 +2,8 @@
 
 🛒 A web app for creating shopping list disguised as mobile app built with HTML, CSS, JavaScript and Firebase.
 
+https://github.com/lucieyarish/add-to-cart/assets/79669599/a4fb033c-807c-41d4-83e6-0bd9a3baf9c9
+
 ## About the Project
 
 While working on this project via [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend), I learned/practiced some of the very important JavaScript concepts and had a chance to learn a new great tool: Firebase!
